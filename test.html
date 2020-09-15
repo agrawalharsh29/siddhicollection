@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="wickedcss.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{
+    margin:0px;
+    height:100vh;
+    padding:0px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  #particles-js{
+    height:700px;
+    background-image:url(back2.jpg);
+    background-size:cover;
+     /*background: linear-gradient(to bottom right, #ccccff 0%, #ffffff 100%);*/
+    margin-top: -17px;
+    color: black;
+    width:100%;
+    box-shadow: 2px 0px 2px 0px #888888;
+    /*opacity: 0.8;*/
+    /*filter:brightness(50%);*/
+  }
+  #ab{
+    width:100%;
+    position:absolute;
+    text-align: center;
+    top:30%;
+    /*margin-left:250px;*/
+  }
+  .resume{
+     background: linear-gradient(to bottom right, #0066ff 50%, #99ccff 100%);
+     width:130px;
+     height:40px;
+     border-radius: 100px;
+     border-style: solid;
+     color:white;
+}a{
+  color:white;
+  font-size: 17px;
+}
+.active{
+  /*margin-left:520px;*/
+  color:red;
+}
+.checked {
+  color: orange;
+}
+span{
+  margin-left: 15px;
+}
+li{
+  /*font-weight: bold;*/
+  font-size:18px;
+}
+.harsh{
+margin-left:100px;
+}
+.bar{
+  width:100%;
+  height: 80px;
+  background-color: transparent;
+  }
+  .ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333333;*/
+}
+
+.li {
+  float: right;
+}
+
+.li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+.ic a{
+  color:black;
+  float:left;
+  font-size: 22px;
+  display: block;
+  padding: 16px;
+}
+.card{
+  transition: transform .2s;
+}
+.card:hover{
+  /*background-color: grey;*/
+  /*width:150px;*/
+  /*height: 150px;*/
+  color:red;
+  transform: scale(1.1);
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+    $("#hello").hide();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  /*text-align: center;*/
+  background-color: white;
+  border: solid 1px #c3c3c3;
+  z-index: 2;
+
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  height:470px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .col-sm-3{
+    margin-top: 30px;
+  }
+  #webdev{
+    margin-left: 55%;
+  }
+  #rw{
+    margin-left: 10%;
+  }
+  .card{
+    height:200px;
+  }
+  .gif{
+    margin-left: 20%;
+  }
+  #abt{
+    margin-left: 10%;
+  }
+  #particles-js{
+      height:780px;
+  }
+  .li a {
+      padding:6px;
+  }
+  .ic a{
+      padding:6px;
+  }
+  .harsh{
+      margin-left:50px;
+  }
+</style>
+</head>
+<body>
+  <!-- <nav class="navbar navbar-transparent">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-size: 25px;font-weight: bold;">HA</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="blog.html">Blogs</a></li>
+      <li><a href="#foot">Contact</a></li>
+    </ul>
+  </div>
+</nav> -->
+
+
+<div class="first" style="width:100%;">
+
+<div id="particles-js">
+  <div class="bar"><br>
+<ul class="ul">
+  <li class="ic"><a href="#home">HA</a></li>
+
+  <li class="li"><a href="#blog.html" class="active">Blogs</a></li>
+  <li class="li" ><a href="#contact">Contact</a></li>
+  <li class="li"><a href="#abt">About</a></li>
+  <li class="li"><a href="#home">Home</a></li>
+</ul>
+
+</div>
+
+
+  <div id="ab">
+    <h1 class="zoomer"style="color:black;font-weight: bold;letter-spacing: 2px;font-family: Ubuntu;font-size: 35px;">I'm Harsh</h1>
+    <h1 style="color:black;font-size: 20px;font-family: Ubuntu;font-size:25px;">Practical and versatile Web Developer, pursuing B-tech in the department <br>of Computer Science and Engineering.</h1><br>
+    <a href="https://drive.google.com/drive/folders/1Dh4ZHgReTepxcLwZdAvbexsFoAeBbVQj?usp=sharing"><button class="resume">Resume</button></a><br><br><br><br>
+    <a href="https://www.instagram.com/"><img src="i.png" width="28px" height="28px" style="margin-left: 20px;margin-top: 10px;"></a>
+    <a href="https://www.facebook.com/"><img src="f.png" width="28px" height="28px" style="margin-left: 20px;margin-top: 10px;"></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="gm.png" width="28px" height="28px" style="margin-left: 20px;margin-top: 10px;"></a>
+    <a href="https://www.linkedin.com/in/harsh-agrawal-1b5026161/"><img src="li.png" width="28px" height="28px" style="margin-left: 20px;margin-top: 10px;"></a>
+    <a href="https://github.com/agrawalharsh29"><img src="gh.png" width="28px" height="28px" style="margin-left: 20px;margin-top: 10px;"></a>
+  </div>
+</div> 
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<div class="container" style="background-color:#fff;width:100%;">
+  <!-- <center><h1>About Me</h1></center> -->
+
+<div class="row" id="abt">
+  <div class="col-sm-4" style="background-color: white;margin-top: 0px;"><img class="harsh" src="harsh.jpeg"style="width:250px;height: 250px;margin-top: 40px;border-radius: 50%"><br></div>
+  <div class="col-sm-8"><br><center><h1>About Me</h1><br><br></center><p class="ab4" style="color:black;margin-top:0px;margin-left:10px;font-family: Ubuntu;font-size:20px;">I'm currently an undergraduate, studying Computer Science at Sikkim Manipal Institute of Technology. Outside academics, I'm a Freelance Web Developer and this comes from my passion for building stuff.</p></div><br>
+</div>
+  <div class="row" style="background-color: #f7f8fa;">
+  <div class="col-sm-4" style="background-color: #f7f8fa;margin-top: 140px;"><h3 style="font-size:30px;margin-top: -75px;"><center>Education</center></h3>
+    <hr style="width:130px;margin-top: 0px;border-color: red;background-color: red;">
+  </div>
+  <div class="col-sm-8" style="background-color: #f7f8fa;">
+    
+
+      <ul><h4 class="ab5" style="position:absolute;color:black;font-weight: bold;font-family: Ubuntu;">Undergraduate</h4><br>
+  <br>
+<hr style="width:120px;margin-top: 0px;border-color: red;background-color: red;margin-left: 0px">
+
+  <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">Sikkim Manipal Institute Of Technology , sikkkim </p></li>
+    <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">Bachelor of Technology in Computer Science</p></li>
+    <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">2019-present</p></li></ul>
+    
+
+    <ul><h4 class="ab5" style="position:absolute;color:black;font-weight: bold;font-family: Ubuntu;">Intermediate</h4><br>
+
+    <br>
+      <hr style="width:120px;margin-top: 0px;border-color: red;background-color: red;margin-left: 0px">
+
+  <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">Ishan International Public School</p></li>
+    <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">Secondary Education</p></li>
+    <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">2017-2019</p></li></ul>
+
+    <ul><h4 class="ab5" style="position:absolute;color:black;font-weight: bold;font-family: Ubuntu;">Matriculation</h4><br>
+
+
+    <br>
+      <hr style="width:120px;margin-top: 0px;border-color: red;background-color: red;margin-left: 0px">
+
+  <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">Don Bosco Academy</p></li>
+    <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">Primary Education</p></li>
+    <li><p style="color:black;font-size:17px;font-family: Ubuntu;font-weight: bold;">2019-present</p></li></ul>
+  </div>
+</div>
+<div class="row" id="rw"style="margin-top: 25px;">
+<center><h3 class="slideLeft">Services Offered</h3></center>
+ <center><hr class="slideLeft" style="width:190px;margin-top: 0px;border-color: red;background-color: red;"><br></center><br>
+
+
+<div class="col-sm-3" id = "webdev"style="box-shadow: 2px 0px 2px 0px #888888; width:200px;margin-left: 60px;">
+<div class="card" style="width:200px;">
+  <img class="card-img-top" src="WD.png" alt="Card image top" style="width:150px;height: 150px;">
+  <div class="card-body" style="width:200px;">
+    <!-- <p class="card-title">Web Development</p> -->
+    <b><h4 class="card-subtitle" style="margin-left: 10px;">Web Development</h4></b>
+    <!-- <p class="card-text">This is a simple Card example</p> -->
+    <!-- <p>Web Development</p> -->
+  </div>
+</div>    
+</div>
+<div class="col-sm-3" style="box-shadow: 2px 0px 2px 0px #888888; width:200px;height:190px;margin-left: 60px;">
+  <div class="card">
+  <img class="card-img-top" src="DA.png" alt="Card image top" style="width:170px;height: 130px;margin-top: 20px;"><br>
+  <div class="card-body">
+    <h4 class="card-title"style="margin-left: 20px;">Data Analytics</h4>
+    <!-- <p class="card-text">This is a simple Card example</p> -->
+  </div>
+</div>    
+</div> 
+<div class="col-sm-3" style="box-shadow: 2px 0px 2px 0px #888888; width:200px;margin-left: 60px;">
+  <div class="card">
+  <img class="card-img-top" src="JAVA.png" alt="Card image top" style="width:150px;height:150px">
+  <div class="card-body">
+    <center><h4 class="card-title">JAVA</h4></center>
+    <!-- <h4 class="card-subtitle">Card subtitle</h4>
+    <p class="card-text">This is a simple Card example</p> -->
+  </div>
+</div>    
+</div> 
+<div class="col-sm-3" style="box-shadow: 2px 0px 2px 0px #888888; width:200px;margin-left: 60px;">
+  <div class="card">
+  <img class="card-img-top" src="python.jpg" alt="Card image top" style="width:150px;height: 150px;">
+  <div class="card-body">
+   <center> <h4 class="card-title">Python</h4></center>
+    <!-- <h4 class="card-subtitle">Card subtitle</h4> -->
+    <!-- <p class="card-text">This is a simple Card example</p> -->
+  </div>
+</div>    
+</div> 
+<div class="col-sm-3" style="box-shadow: 2px 0px 2px 0px #888888; width:200px;margin-left: 60px;">
+  <div class="card">
+  <img class="card-img-top" src="ML.png" alt="Card image top" style="width:150px;">
+  <div class="card-body">
+   <center> <h4 class="card-title">Machine Learning</h4></center>
+    <!-- <h4 class="card-subtitle">Card subtitle</h4> -->
+    <!-- <p class="card-text">This is a simple Card example</p> -->
+  </div>
+</div>    
+</div>  
+</div>
+
+
+<div class="row" style="background-color: #f7f8fa;margin-top: 80px;">
+<div class="col-sm-4" style="background-color: #f7f8fa;margin-top: 140px;"><h3 class="slideRight"style="font-size:30px;margin-top: -75px;"><center>Work Experiece</center></h3>
+    <hr style="width:130px;margin-top: 0px;border-color: red;background-color: red;">
+    <img src="img5.png"  width="250px" height="250px" style="margin-left: 70px;"> 
+  </div>
+  <div class="col-sm-8" style="background-color: #f7f8fa;">
+    <ul><p style="font-family: Ubuntu;font-weight: bold;font-size: 18px;">1) Untapped Technologies</p>
+    <hr style="width:180px;margin-top: 0px;border-color: red;background-color: red;margin-left: 0px;">
+
+  <li> Worked on the front-end part</li>
+  <li>Developed the initial website for the company.</li>
+  <li> Integration of front-end with google maps api</li></ul>
+</ul>
+<ul><p style="font-family: Ubuntu;font-weight: bold;font-size: 18px;">2) Ardent Computech Pvt.Ltd.</p>
+    <hr style="width:180px;margin-top: 0px;border-color: red;background-color: red;margin-left: 0px;">
+
+  <li>Worked on Big Data Hadoop</li>
+  <li>Analysed the data set of Rape Cases In India</li>
+  <li>Twitter data sentiment Analysis</li>
+</ul>
+<ul><p style="font-family: Ubuntu;font-weight: bold;font-size: 18px;">3) NIT Rourkela</p>
+    <hr style="width:180px;margin-top: 0px;border-color: red;background-color: red;margin-left: 0px;">
+
+  <li>Estimation of Human Cognitive states</li>
+  <li>Standard scaling of Raw Data</li>
+  <li>Data Normalisation</li>
+  <li>Accuracy calculation using Different ML Algorithms</li>
+</ul>
+
+      
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="contact" id="contact">
+  <center><h1>Get In Touch!!</h1></center>
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="gif" src="tenor.gif" width="200px" height="200px" style="border-radius: 50%;">
+    </div>
+    <div class="col-sm-8" id="abt">
+      <!-- <a href="https://drive.google.com/drive/folders/1Dh4ZHgReTepxcLwZdAvbexsFoAeBbVQj?usp=sharing"><button class="resume">Resume</button></a><br><br><br><br> --><br><br>
+    <!-- <a href="https://www.instagram.com/"><img src="i.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"></a><br> -->
+    <!-- <a href="https://www.facebook.com/"><img src="f.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"></a><br> -->
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="gm.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">EMAIL</span><p style="margin-top: -10px;margin-left: 100px;color: grey">agrawalharsh189@gmail.com</p>
+    
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="cn.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">CONTACT</span><p style="margin-top: -10px;margin-left: 100px;color: grey">09835443505</p>
+
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="ln.png" width="30px" height="30px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">ADDRESS</span><p style="margin-top: -10px;margin-left: 100px;color: grey">Boring Road, Patna.</p>
+
+
+
+    <!-- <a href="https://www.linkedin.com/in/harsh-agrawal-1b5026161/"><img src="li.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"></a><br>
+    <a href="https://github.com/agrawalharsh29"><img src="gh.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;">GITHUB</a><br> -->
+    </div>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
